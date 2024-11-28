@@ -1,0 +1,7 @@
+task_manager.first_route:
+  path: '/task_list'
+  defaults:
+    _controller: '\Drupal\task_manager\Controller\TaskManagerController::listAll'
+    _title: 'Awesome chat!!!'
+  requirements:
+    _permission: 'access content'
