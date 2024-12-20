@@ -1,0 +1,12 @@
+school.school_students_type.*:
+  type: config_entity
+  label: 'students type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string

@@ -1,0 +1,49 @@
+entity.school_students.view:
+  title: 'View'
+  route_name: entity.school_students.canonical
+  base_route: entity.school_students.canonical
+entity.school_students.edit_form:
+  title: 'Edit'
+  route_name: entity.school_students.edit_form
+  base_route: entity.school_students.canonical
+entity.school_students.delete_form:
+  title: 'Delete'
+  route_name: entity.school_students.delete_form
+  base_route: entity.school_students.canonical
+  weight: 10
+entity.school_students.collection:
+  title: 'students'
+  route_name: entity.school_students.collection
+  base_route: system.admin_content
+  weight: 10
+entity.school_students_type.edit_form:
+  title: 'Edit'
+  route_name: entity.school_students_type.edit_form
+  base_route: entity.school_students_type.edit_form
+entity.school_students_type.collection:
+  title: 'List'
+  route_name: entity.school_students_type.collection
+  base_route: entity.school_students_type.collection
+
+entity.classes.settings:
+  title: 'Settings'
+  route_name: entity.classes.settings
+  base_route: entity.classes.settings
+entity.classes.view:
+  title: 'View'
+  route_name: entity.classes.canonical
+  base_route: entity.classes.canonical
+entity.classes.edit_form:
+  title: 'Edit'
+  route_name: entity.classes.edit_form
+  base_route: entity.classes.canonical
+entity.classes.delete_form:
+  title: 'Delete'
+  route_name: entity.classes.delete_form
+  base_route: entity.classes.canonical
+  weight: 10
+entity.classes.collection:
+  title: 'classess'
+  route_name: entity.classes.collection
+  base_route: system.admin_content
+  weight: 10

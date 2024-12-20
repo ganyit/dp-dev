@@ -1,0 +1,23 @@
+entity.school_students_type.collection:
+  title: 'Manage Students'
+  description: 'Manage and CRUD actions on students type.'
+  parent: system.admin_structure
+  route_name: entity.school_students_type.collection
+
+entity.school_students.collection:
+  title: 'students'
+  description: 'List of students.'
+  route_name: entity.school_students.collection
+  parent: system.admin_content
+
+entity.classes.settings:
+  title: 'classes'
+  description: 'Configure a classes entity type.'
+  route_name:  entity.classes.settings
+  parent: system.admin_structure
+
+entity.classes.collection:
+  title: 'classess'
+  description: 'List of classess.'
+  route_name: entity.classes.collection
+  parent: system.admin_content

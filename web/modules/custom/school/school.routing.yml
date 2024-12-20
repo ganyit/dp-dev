@@ -1,0 +1,7 @@
+entity.classes.settings:
+  path: 'admin/structure/classes'
+  defaults:
+    _form: '\Drupal\school\Form\classesSettingsForm'
+    _title: 'classes'
+  requirements:
+    _permission: 'administer classes'

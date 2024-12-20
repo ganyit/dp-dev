@@ -1,0 +1,16 @@
+administer school_students types:
+  title: 'Administer students types'
+  description: 'Maintain the types of students entity.'
+  restrict access: true
+
+administer classes:
+  title: 'Administer classess'
+  restrict access: true
+view classes:
+  title: 'View classes'
+edit classes:
+  title: 'Edit classes'
+delete classes:
+  title: 'Delete classes'
+create classes:
+  title: 'Create classes'

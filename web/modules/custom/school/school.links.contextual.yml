@@ -1,0 +1,21 @@
+entity.school_students.edit_form:
+  route_name: entity.school_students.edit_form
+  group: school_students
+  title: 'Edit'
+
+entity.school_students.delete_form:
+  route_name: entity.school_students.delete_form
+  group: school_students
+  title: 'Delete'
+  weight: 10
+
+entity.classes.edit_form:
+  route_name: entity.classes.edit_form
+  group: classes
+  title: 'Edit'
+
+entity.classes.delete_form:
+  route_name: entity.classes.delete_form
+  group: classes
+  title: 'Delete'
+  weight: 10

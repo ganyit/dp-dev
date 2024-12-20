@@ -1,0 +1,5 @@
+name: 'school'
+type: module
+description: 'manage school activities'
+package: Custom
+core_version_requirement: ^10 || ^11

@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - school
+id: classes_delete_action
+label: 'Delete classess'
+type: classes
+plugin: entity:delete_action:classes
+configuration: {  }

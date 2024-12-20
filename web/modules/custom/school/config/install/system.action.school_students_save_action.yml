@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - school
+id: school_students_save_action
+label: 'Save students'
+type: school_students
+plugin: entity:save_action:school_students
+configuration: {  }
