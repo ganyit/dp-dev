@@ -4,3 +4,10 @@
  * @file
  * Primary module hooks for taskmanager module.
  */
+function task_manager_theme($existing, $type, $theme, $path) {
+  return [
+    'payment_list' => [
+      'variables' => ['title' => NULL,'studentList' => array()],      
+    ],
+  ];
+}

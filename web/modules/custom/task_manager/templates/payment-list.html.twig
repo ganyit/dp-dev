@@ -1,0 +1,10 @@
+<p>Test twig template!</p>
+ 
+<p>test_var: </p>
+
+{% for student in studentList %}
+    <div id='name'>{{ student.studentname }}</div>
+    <div id='classname'>{{ student.classname }}</div>
+    <div id='term1'>{{ student.term1 }}</div>
+
+{% endfor %}

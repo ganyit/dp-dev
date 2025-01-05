@@ -1,0 +1,3 @@
+administer school_payment:
+  title: 'Administer school payments'
+  restrict access: true

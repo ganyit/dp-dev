@@ -1,0 +1,5 @@
+school_payment.add_form:
+  title: 'Add school payment'
+  route_name: entity.school_payment.add_form
+  appears_on:
+    - entity.school_payment.collection

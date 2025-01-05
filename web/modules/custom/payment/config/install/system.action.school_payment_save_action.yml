@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - payment
+id: school_payment_save_action
+label: 'Save school payments'
+type: school_payment
+plugin: entity:save_action:school_payment
+configuration: {  }

@@ -1,0 +1,11 @@
+entity.school_payment.settings:
+  title: 'school payment'
+  description: 'Configure a school payment entity type.'
+  route_name:  entity.school_payment.settings
+  parent: system.admin_structure
+
+entity.school_payment.collection:
+  title: 'school payments'
+  description: 'List of school payments.'
+  route_name: entity.school_payment.collection
+  parent: system.admin_content

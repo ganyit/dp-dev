@@ -1,0 +1,7 @@
+entity.school_payment.settings:
+  path: 'admin/structure/school-payment'
+  defaults:
+    _form: '\Drupal\payment\Form\SchoolPaymentSettingsForm'
+    _title: 'school payment'
+  requirements:
+    _permission: 'administer school_payment'
