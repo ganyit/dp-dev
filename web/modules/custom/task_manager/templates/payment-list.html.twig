@@ -1,10 +1,23 @@
 <p>Test twig template!</p>
  
 <p>test_var: </p>
-
+<table class="table">
+    <thead>
+    <tr>
+        <th id='name' scope="col">Name</th>
+        <th id='classname' scope="col">Class</th>
+        <th id='term1' scope="col">Term1 Fee</th>
+        <th id='term1' scope="col">Balance</th>
+    </tr>
+    </thead>
 {% for student in studentList %}
-    <div id='name'>{{ student.studentname }}</div>
-    <div id='classname'>{{ student.classname }}</div>
-    <div id='term1'>{{ student.term1 }}</div>
-
+    <tbody>
+    <tr>
+        <th id='name' scope="rwo">{{ student.studentname }}</th>
+        <td id='classname'>{{ student.classname }}</td>
+        <td id='term1'>{{ student.term1 }}</td>
+        <td id='term1'>{{ student.balanceFee }}</td>
+    </tr>
+    </tbody>
 {% endfor %}
+</table>

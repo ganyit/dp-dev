@@ -1187,6 +1187,59 @@
             "install-path": "../doctrine/lexer"
         },
         {
+            "name": "drupal/bootstrap5",
+            "version": "4.0.3",
+            "version_normalized": "4.0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bootstrap5.git",
+                "reference": "4.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap5-4.0.3.zip",
+                "reference": "4.0.3",
+                "shasum": "3181f76d9f080396931cd5a5643ad710f7bfdad7"
+            },
+            "require": {
+                "drupal/core": "^10.1 || ^11.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "4.0.3",
+                    "datestamp": "1723049588",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Vladimir Roudakov (vladimiraus)",
+                    "homepage": "https://www.drupal.org/u/vladimiraus",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "vladimiraus",
+                    "homepage": "https://www.drupal.org/user/673120"
+                }
+            ],
+            "description": "Master theme using Bootstrap 5: powerful front-end framework for faster and easier web development.",
+            "homepage": "https://www.drupal.org/project/bootstrap5",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bootstrap5",
+                "issues": "https://www.drupal.org/project/issues/bootstrap5"
+            },
+            "install-path": "../../web/themes/contrib/bootstrap5"
+        },
+        {
             "name": "drupal/core",
             "version": "10.3.9",
             "version_normalized": "10.3.9.0",
@@ -1523,6 +1576,119 @@
             "install-path": null
         },
         {
+            "name": "drupal/dynamic_entity_reference",
+            "version": "3.2.0",
+            "version_normalized": "3.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/dynamic_entity_reference.git",
+                "reference": "3.2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/dynamic_entity_reference-3.2.0.zip",
+                "reference": "3.2.0",
+                "shasum": "a265f7f0723fb085bd729e7624d644475900cf94"
+            },
+            "require": {
+                "drupal/core": "^10 || ^11",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "drupal/diff": "*",
+                "mglaman/phpstan-drupal": "^1.1",
+                "phpstan/phpstan": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.2.0",
+                    "datestamp": "1706486865",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Lee Rowlands",
+                    "homepage": "https://www.drupal.org/u/larowlan",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Jibran Ijaz",
+                    "homepage": "https://www.drupal.org/u/jibran",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "larowlan",
+                    "homepage": "https://www.drupal.org/user/395439"
+                }
+            ],
+            "description": "Provides a field that allows an entity-reference field to reference more than one entity type.",
+            "homepage": "http://drupal.org/project/dynamic_entity_reference",
+            "support": {
+                "source": "http://cgit.drupalcode.org/dynamic_entity_reference",
+                "issues": "http://drupal.org/project/dynamic_entity_reference",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            },
+            "install-path": "../../web/modules/contrib/dynamic_entity_reference"
+        },
+        {
+            "name": "drupal/edux",
+            "version": "10.2.0",
+            "version_normalized": "10.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/edux.git",
+                "reference": "10.2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/edux-10.2.0.zip",
+                "reference": "10.2.0",
+                "shasum": "a9eb29ca58c883219129a6ab7657b7c10cd17c2e"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "10.2.0",
+                    "datestamp": "1693917347",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "ravis",
+                    "homepage": "https://www.drupal.org/user/79351"
+                }
+            ],
+            "description": "Theme For Educational Institutes by <a href=\"https://drupar.com/\" target=\"_blank\">Drupar.com</a>",
+            "homepage": "https://www.drupal.org/project/edux",
+            "support": {
+                "source": "https://git.drupalcode.org/project/edux"
+            },
+            "install-path": "../../web/themes/contrib/edux"
+        },
+        {
             "name": "drupal/exclude_node_title",
             "version": "1.4.0",
             "version_normalized": "1.4.0.0",
@@ -1710,6 +1876,53 @@
                 "source": "https://git.drupalcode.org/project/phone_number"
             },
             "install-path": "../../web/modules/contrib/phone_number"
+        },
+        {
+            "name": "drupal/thex",
+            "version": "10.0.4",
+            "version_normalized": "10.0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/thex.git",
+                "reference": "10.0.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/thex-10.0.4.zip",
+                "reference": "10.0.4",
+                "shasum": "51bc07f2a2e3e38924d9a6abea70257b13babbe4"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "10.0.4",
+                    "datestamp": "1693915467",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "ravis",
+                    "homepage": "https://www.drupal.org/user/79351"
+                }
+            ],
+            "description": "<p>A clean, light weight and mobile optimized base theme for Drupal 9 and 10 by <a href=\"https://drupar.com/\" target=\"_blank\">Drupar.com</a><br /><a href=\"https://drupar.com/theme/thex\" target=\"_blank\">Theme Page</a> | <a href=\"https://drupar.com/doc/thex\" target=\"_blank\">Theme User Guide</a> | <a href=\"https://www.drupal.org/project/thex\" target=\"_blank\">Project Page</a></p>",
+            "homepage": "https://www.drupal.org/project/thex",
+            "support": {
+                "source": "https://git.drupalcode.org/project/thex"
+            },
+            "install-path": "../../web/themes/contrib/thex"
         },
         {
             "name": "drush/drush",
