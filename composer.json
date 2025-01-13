@@ -18,6 +18,7 @@
         "php": "*",
         "composer/installers": "^2.0",
         "drupal/bootstrap5": "^4.0",
+        "drupal/classy": "^1.0",
         "drupal/core-composer-scaffold": "^10.3",
         "drupal/core-project-message": "^10.3",
         "drupal/core-recommended": "^10.3",
@@ -26,6 +27,7 @@
         "drupal/exclude_node_title": "^1.4",
         "drupal/multiple_registration": "^3.3",
         "drupal/phone_number": "^2.0@alpha",
+        "drupal/showcase_lite": "^1.5",
         "drupal/thex": "^10.0",
         "drush/drush": "^13.3"
     },

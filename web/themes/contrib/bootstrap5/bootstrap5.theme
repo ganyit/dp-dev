@@ -11,6 +11,9 @@ use Drupal\bootstrap5\SubthemeFormManager;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Render\Element;
 use Drupal\views\ViewExecutable;
+use Drupal\Core\Ajax\AjaxResponse;
+use Drupal\Core\Ajax\InvokeCommand;
+use Drupal\Core\Ajax\ReplaceCommand;
 
 /**
  * Implements hook_theme_suggestions_HOOK_alter().
@@ -55,11 +58,21 @@ function bootstrap5_form_system_theme_settings_subtheme_submit($form, FormStateI
 }
 
 function bootstrap5_form_school_payment_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-  echo "theeeeeeeeeeeeeee.$form_id";
+  #echo "theeeeeeeeeeeeeee.$form_id";
   ini_set("memory_limit",-1);
-    $node = $form_state->getFormObject()->getEntity();
+    #$node = $form_state->getFormObject()->getEntity();
     #print_r($node);exit;
-    echo $node->class_name();
+    #echo $node->class_name();
+
+    $form['field_term_1']['widget'][0]['value']['#ajax'] = array(
+    'callback' => 'ajax_callback',
+    'event' => 'change',
+    );
+}
+
+function ajax_callback($form, $form_state): AjaxResponse {
+  $response = new AjaxResponse(); 
+  return $response->addCommand(new InvokeCommand('#edit-field-term-2-0-value', 'val', ['300']));
 }
 
 /**
