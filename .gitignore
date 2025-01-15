@@ -1,0 +1,24 @@
+# Ignore Drupal's files directory
+/web/sites/default/files/
+
+# Ignore settings.php and services.yml (for sensitive data)
+/web/sites/default/settings.php
+/web/sites/default/services.yml
+
+# Ignore the vendor directory (composer dependencies)
+/vendor/
+
+# Ignore Node.js modules (if used)
+/node_modules/
+
+# Ignore IDE config files
+/.idea/
+/.vscode/
+
+# Ignore .env (if used for environment variables)
+.env
+
+# Ignore temporary or cache directories
+/cache/
+/tmp/
+/private/

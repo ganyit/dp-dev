@@ -25,10 +25,13 @@
         "drupal/dynamic_entity_reference": "^3.2",
         "drupal/edux": "^10.2",
         "drupal/exclude_node_title": "^1.4",
+        "drupal/metatag": "^2.1",
         "drupal/multiple_registration": "^3.3",
         "drupal/phone_number": "^2.0@alpha",
+        "drupal/seo_checklist": "^5.2",
         "drupal/showcase_lite": "^1.5",
         "drupal/thex": "^10.0",
+        "drupal/xmlsitemap": "^1.5",
         "drush/drush": "^13.3"
     },
     "conflict": {
