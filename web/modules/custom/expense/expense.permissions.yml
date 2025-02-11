@@ -1,0 +1,11 @@
+administer expense_expenses:
+  title: 'Administer expensess'
+  restrict access: true
+view expense_expenses:
+  title: 'View expenses'
+edit expense_expenses:
+  title: 'Edit expenses'
+delete expense_expenses:
+  title: 'Delete expenses'
+create expense_expenses:
+  title: 'Create expenses'

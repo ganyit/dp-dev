@@ -1,7 +1,7 @@
-task_manager.first_route:
-  path: '/task_list'
+task_manager.payment_list:
+  path: '/payment_list'
   defaults:
     _controller: '\Drupal\task_manager\Controller\TaskManagerController::listAll'
-    _title: 'Awesome chat!!!'
+    _title: 'Payment List!!!'
   requirements:
     _permission: 'access content'

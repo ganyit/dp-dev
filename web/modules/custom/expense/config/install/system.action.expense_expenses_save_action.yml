@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - expense
+id: expense_expenses_save_action
+label: 'Save expensess'
+type: expense_expenses
+plugin: entity:save_action:expense_expenses
+configuration: {  }

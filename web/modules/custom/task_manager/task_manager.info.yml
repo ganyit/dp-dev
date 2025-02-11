@@ -3,3 +3,5 @@ type: module
 description: 'to list all task'
 package: custom
 core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:form

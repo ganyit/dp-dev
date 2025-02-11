@@ -1,0 +1,11 @@
+entity.expense_expenses.settings:
+  title: 'expenses'
+  description: 'Configure an expenses entity type.'
+  route_name:  entity.expense_expenses.settings
+  parent: system.admin_structure
+
+entity.expense_expenses.collection:
+  title: 'expensess'
+  description: 'List of expensess.'
+  route_name: entity.expense_expenses.collection
+  parent: system.admin_content

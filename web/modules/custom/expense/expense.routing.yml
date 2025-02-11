@@ -1,0 +1,7 @@
+entity.expense_expenses.settings:
+  path: 'admin/structure/expense-expenses'
+  defaults:
+    _form: '\Drupal\expense\Form\ExpensesSettingsForm'
+    _title: 'expenses'
+  requirements:
+    _permission: 'administer expense_expenses'

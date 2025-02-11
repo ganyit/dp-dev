@@ -1,0 +1,3 @@
+services:
+  task_manager.taskmanager_controller:
+    class: Drupal\task_manager\Controller\TaskManagerController

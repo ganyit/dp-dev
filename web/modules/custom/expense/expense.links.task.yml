@@ -1,0 +1,22 @@
+entity.expense_expenses.settings:
+  title: 'Settings'
+  route_name: entity.expense_expenses.settings
+  base_route: entity.expense_expenses.settings
+entity.expense_expenses.view:
+  title: 'View'
+  route_name: entity.expense_expenses.canonical
+  base_route: entity.expense_expenses.canonical
+entity.expense_expenses.edit_form:
+  title: 'Edit'
+  route_name: entity.expense_expenses.edit_form
+  base_route: entity.expense_expenses.canonical
+entity.expense_expenses.delete_form:
+  title: 'Delete'
+  route_name: entity.expense_expenses.delete_form
+  base_route: entity.expense_expenses.canonical
+  weight: 10
+entity.expense_expenses.collection:
+  title: 'expensess'
+  route_name: entity.expense_expenses.collection
+  base_route: system.admin_content
+  weight: 10

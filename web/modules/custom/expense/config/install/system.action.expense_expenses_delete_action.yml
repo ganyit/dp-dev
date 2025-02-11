@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - expense
+id: expense_expenses_delete_action
+label: 'Delete expensess'
+type: expense_expenses
+plugin: entity:delete_action:expense_expenses
+configuration: {  }

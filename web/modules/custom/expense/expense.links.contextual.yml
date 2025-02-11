@@ -1,0 +1,10 @@
+entity.expense_expenses.edit_form:
+  route_name: entity.expense_expenses.edit_form
+  group: expense_expenses
+  title: 'Edit'
+
+entity.expense_expenses.delete_form:
+  route_name: entity.expense_expenses.delete_form
+  group: expense_expenses
+  title: 'Delete'
+  weight: 10

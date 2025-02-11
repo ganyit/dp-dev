@@ -7,7 +7,9 @@
 use Drupal\Core\Theme\ThemeSettings;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Template\Attribute;
-
+use Drupal\Core\Ajax\AjaxResponse;
+use Drupal\Core\Ajax\InvokeCommand;
+use Drupal\Core\Ajax\ReplaceCommand;
 /**
  * Implements hook_preprocess_HOOK() for HTML document templates.
  *
@@ -667,6 +669,7 @@ function showcase_lite_preprocess_page(&$variables) {
   } else {
     $variables['post_progress_status'] = "disabled";
   }
+
 }
 
 
@@ -797,12 +800,29 @@ function showcase_lite_theme_suggestions_image_formatter_alter(array &$suggestio
 function showcase_lite_form_school_payment_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   #echo "theeeeeeeeeeeeeee.$form_id";
   ini_set("memory_limit",-1);
-    #$node = $form_state->getFormObject()->getEntity();
-    #print_r($node);exit;
-    #echo $node->class_name();
-
-    $form['field_term_1']['widget'][0]['value']['#ajax'] = array(
+    $form['field_class_name']['widget'][0]['value']['#ajax'] = array(
     'callback' => 'ajax_callback',
     'event' => 'change',
     );
+}
+
+function ajax_callback($form, $form_state): AjaxResponse {
+  $response = new AjaxResponse(); 
+  $submitted_values = $form_state->getValues();
+       $reference_class_value = $submitted_values['field_student_name'][0]['target_id']; 
+        #echo "reference_class_value-----$reference_class_value";
+    // Check if the reference field has a value.
+    if (!empty($reference_class_value)) {
+
+      // Get the entity of the referenced item.
+      $student = \Drupal::entityTypeManager()->getStorage('school_students')->load($reference_class_value); 
+      $class_id = $student->get('field_class')->target_id;
+      $task_manager = \Drupal::service('task_manager.taskmanager_controller');
+      $classDetails = $task_manager->loadClassDetail($class_id);
+    }
+    #$form['field_class_name'][0]['value'] = $classDetails['name'];
+  #echo "<pre>";
+  #print_r($submitted_values);exit;
+  $field_value = $submitted_values['field_term_1'][0]['value'];
+  return $response->addCommand(new InvokeCommand('#edit-field-class-name-0-value', 'val', [$classDetails['name']]));
 }

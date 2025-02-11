@@ -1,0 +1,5 @@
+expense_expenses.add_form:
+  title: 'Add expenses'
+  route_name: entity.expense_expenses.add_form
+  appears_on:
+    - entity.expense_expenses.collection

@@ -31,6 +31,7 @@
         "drupal/seo_checklist": "^5.2",
         "drupal/showcase_lite": "^1.5",
         "drupal/thex": "^10.0",
+        "drupal/twig_tweak": "^3.4",
         "drupal/xmlsitemap": "^1.5",
         "drush/drush": "^13.3"
     },
