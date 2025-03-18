@@ -1,0 +1,10 @@
+<?php
+use Drupal\field\Entity\FieldStorageConfig;
+use Drupal\field\Entity\FieldConfig;
+
+/**
+ * Implements hook_schema().
+ */
+function email_template_system_schema() {
+
+}

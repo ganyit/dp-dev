@@ -1,0 +1,22 @@
+entity.email_template.settings:
+  title: 'Settings'
+  route_name: entity.email_template.settings
+  base_route: entity.email_template.settings
+entity.email_template.view:
+  title: 'View'
+  route_name: entity.email_template.canonical
+  base_route: entity.email_template.canonical
+entity.email_template.edit_form:
+  title: 'Edit'
+  route_name: entity.email_template.edit_form
+  base_route: entity.email_template.canonical
+entity.email_template.delete_form:
+  title: 'Delete'
+  route_name: entity.email_template.delete_form
+  base_route: entity.email_template.canonical
+  weight: 10
+entity.email_template.collection:
+  title: 'Email templates'
+  route_name: entity.email_template.collection
+  base_route: system.admin_content
+  weight: 10

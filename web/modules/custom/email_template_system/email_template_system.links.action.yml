@@ -1,0 +1,5 @@
+email_template.add_form:
+  title: 'Add email template'
+  route_name: entity.email_template.add_form
+  appears_on:
+    - entity.email_template.collection

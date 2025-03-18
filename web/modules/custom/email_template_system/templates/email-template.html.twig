@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ * Default theme implementation to present an email template entity.
+ *
+ * This template is used when viewing a canonical email template page,
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ *   print a subset such as 'content.label'.
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_email_template()
+ */
+#}
+test..................
+<div class="custom-entity">
+ <a href="/email-template/add" class="btn btn-info">Add Email Template</a>
+  <ul>
+    {% for email_template in email_templates %}    
+      <li>test1
+        <h3>{{ email_template.label }}</h3>
+        <div>
+          <p><strong>Field 1:</strong> {{ email_template.email_title.value }}</p>
+          <p><strong>Field 2:</strong> {{ email_template.email_subject.value }}</p>
+          <p><strong>Field 3:</strong> {{ email_template.email_body.value }}</p>
+          <a href="/email-template/{{email_template.label}}/edit" class="btn btn-info">Edit Email Template</a>
+          <a href="/email-template/{{email_template.label}}/delete" class="btn btn-info">Delete Email Template</a>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

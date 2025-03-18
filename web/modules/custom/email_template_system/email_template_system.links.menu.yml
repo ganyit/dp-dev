@@ -1,0 +1,11 @@
+entity.email_template.settings:
+  title: 'Email template'
+  description: 'Configure an Email template entity type.'
+  route_name:  entity.email_template.settings
+  parent: system.admin_structure
+
+entity.email_template.collection:
+  title: 'Email templates'
+  description: 'List of email templates.'
+  route_name: entity.email_template.collection
+  parent: system.admin_content

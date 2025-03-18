@@ -1,0 +1,5 @@
+name: 'email template system'
+type: module
+description: 'A module to manage email templates in Drupal.'
+package: Custom
+core_version_requirement: ^10 || ^11

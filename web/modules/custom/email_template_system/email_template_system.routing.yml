@@ -1,0 +1,21 @@
+entity.email_template.settings:
+  path: 'admin/structure/email-template'
+  defaults:
+    _form: '\Drupal\email_template_system\Form\EmailTemplateSettingsForm'
+    _title: 'Email template'
+  requirements:
+    _permission: 'administer email_template'
+email_template_system.email_template_listing:
+  path: 'admin/content/email-template'
+  defaults:
+    _controller: '\Drupal\email_template_system\Controller\EmailTemplateController::listEmailTemplates'
+    _title: 'Email Template Listing'
+  requirements:
+    _permission: 'access content'
+entity.EmailTemplate.canonical:
+  path: '/email-template/{email_template}'
+  defaults:
+    _entity_view: 'email_template.full'
+    _title_callback: 'Drupal\email_template_system\Controller\EmailTemplateController::getTitle'
+  requirements:
+    _permission: 'view email templates'

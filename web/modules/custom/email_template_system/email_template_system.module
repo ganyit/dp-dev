@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for email template system module.
+ */
+
+use Drupal\Core\Render\Element;
+use Drupal\user\UserInterface;
+use Drupal\Core\Url;
+use Drupal\Core\Messenger\MessengerInterface;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+
+/**
+ * @file
+ * Primary module hooks for taskmanager module.
+ */
+function email_template_system_theme($existing, $type, $theme, $path) {
+  return [
+    'email_template' => [
+      'template' => 'email-template', // The Twig template file name.
+      'variables' => ['email_templates' => array()],  // Define the variables passed to the template.
+    ],
+  ];
+}
+
+/**
+ * Implements hook_entity_insert() to change the redirect after entity creation.
+ */
+function email_template_system_entity_insert(Drupal\Core\Entity\EntityInterface $entity) {
+  // Check if the entity is of the type 'my_custom_entity' (replace with your entity type).
+  if ($entity->getEntityTypeId() == 'email_template') {
+    // Redirect to the listing page instead of the view page.
+    $listing_url = Url::fromRoute('email_template_system.email_template_listing');  // Adjust to your listing route.
+    // Redirect after saving the entity.
+    \Drupal::messenger()->addMessage(t('The email template has been created. You are being redirected.'));
+    $response = new RedirectResponse($listing_url->toString());
+    $response->send();
+  }
+}

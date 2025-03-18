@@ -1,0 +1,16 @@
+administer email_template:
+  title: 'Administer email templates'
+view email_template:
+  title: 'View email template'
+edit email_template:
+  title: 'Edit email template'
+delete email_template:
+  title: 'Delete email template'
+create email_template:
+  title: 'Create email template'
+view email_template revision:
+  title: 'View email template revision'
+revert email_template revision:
+  title: 'Revert email template revision'
+delete email_template revision:
+  title: 'Delete email template revision'

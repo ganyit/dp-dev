@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - email_template_system
+id: email_template_save_action
+label: 'Save email templates'
+type: email_template
+plugin: entity:save_action:email_template
+configuration: {  }
