@@ -16,11 +16,11 @@ class EmailTemplateController extends ControllerBase {
      * Displays the email form.
      */
     public function emailForm() {
-        /*return [
-        '#theme' => 'email_template_form', // Use a theme template or remove if using raw output.
-        '#email_form' => \Drupal::formBuilder()->getForm('Drupal\send_email_form\Form\SendEmailForm');,
-        ];*/
-        return \Drupal::formBuilder()->getForm('Drupal\email_template_system\Form\SendEmailForm');
+        return [
+        '#theme' => 'email_template_mail_form', // Use a theme template or remove if using raw output.
+        '#email_form' => \Drupal::formBuilder()->getForm('Drupal\email_template_system\Form\SendEmailForm'),
+        ];
+        //return \Drupal::formBuilder()->getForm('Drupal\email_template_system\Form\SendEmailForm');
     }
 
 
