@@ -30,6 +30,7 @@
         "drupal/phone_number": "^2.0@alpha",
         "drupal/seo_checklist": "^5.2",
         "drupal/showcase_lite": "^1.5",
+        "drupal/smtp": "^1.4",
         "drupal/thex": "^10.0",
         "drupal/twig_tweak": "^3.4",
         "drupal/xmlsitemap": "^1.5",

@@ -21,6 +21,10 @@ function email_template_system_theme($existing, $type, $theme, $path) {
       'template' => 'email-template', // The Twig template file name.
       'variables' => ['email_templates' => array()],  // Define the variables passed to the template.
     ],
+    'email_template_form' => [
+      'template' => 'email-template-form', // The Twig template file name.
+      'variables' => ['email_form' => array()],  // Define the variables passed to the template.
+    ],
   ];
 }
 

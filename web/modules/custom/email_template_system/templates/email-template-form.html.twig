@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * Default theme implementation to present an email form.
+ *
+ * This template is used for sending a emails,
+ *
+ * Available variables:
+ * - form: A list of form elements
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_email_template()
+ */
+#}
+<div class="email-form-container">
+  <h2>{{ 'Send an Email'|t }}</h2>
+    {{ email_form|raw }}
+</div>

@@ -12,6 +12,13 @@ email_template_system.email_template_listing:
     _title: 'Email Template Listing'
   requirements:
     _permission: 'access content'
+email_template_system.send_emails:
+  path: 'admin/send-emails'
+  defaults:
+    _controller: '\Drupal\email_template_system\Controller\EmailTemplateController::emailForm'
+    _title: 'Email Users'
+  requirements:
+    _permission: 'access content'
 entity.EmailTemplate.canonical:
   path: '/email-template/{email_template}'
   defaults:

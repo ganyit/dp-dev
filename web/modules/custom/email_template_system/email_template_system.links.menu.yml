@@ -9,3 +9,10 @@ entity.email_template.collection:
   description: 'List of email templates.'
   route_name: entity.email_template.collection
   parent: system.admin_content
+
+email_template_system.admin:
+  title: 'Send Email Menu'
+  description: 'Send Email Menu'
+  route_name: email_template_system.send_emails
+  parent: entity.email_template.collection
+  weight: 10

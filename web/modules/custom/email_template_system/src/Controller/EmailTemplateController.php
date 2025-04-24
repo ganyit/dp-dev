@@ -7,7 +7,22 @@ use Drupal\Core\Url;
 use Drupal\Core\Link;
 use Drupal\email_template_system\Entity\EmailTemplate;
 
+use Drupal\email_template_system\Form\SendEmailForm;
+
 class EmailTemplateController extends ControllerBase {
+
+
+    /**
+     * Displays the email form.
+     */
+    public function emailForm() {
+        /*return [
+        '#theme' => 'email_template_form', // Use a theme template or remove if using raw output.
+        '#email_form' => \Drupal::formBuilder()->getForm('Drupal\send_email_form\Form\SendEmailForm');,
+        ];*/
+        return \Drupal::formBuilder()->getForm('Drupal\email_template_system\Form\SendEmailForm');
+    }
+
 
     /**
      * Returns a list of custom entities.

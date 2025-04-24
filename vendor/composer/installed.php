@@ -3,7 +3,7 @@
         'name' => 'drupal/recommended-project',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'd826619143de6150b51f93718a3d7e7bbb1af5f9',
+        'reference' => 'f012fba131599b36eaa69f97b0d521be02daef99',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -427,7 +427,7 @@
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'd826619143de6150b51f93718a3d7e7bbb1af5f9',
+            'reference' => 'f012fba131599b36eaa69f97b0d521be02daef99',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -448,6 +448,15 @@
             'reference' => '8.x-1.5',
             'type' => 'drupal-theme',
             'install_path' => __DIR__ . '/../../web/themes/contrib/showcase_lite',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'drupal/smtp' => array(
+            'pretty_version' => '1.4.0',
+            'version' => '1.4.0.0',
+            'reference' => '8.x-1.4',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/smtp',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
@@ -724,6 +733,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'phpmailer/phpmailer' => array(
+            'pretty_version' => 'v6.9.3',
+            'version' => '6.9.3.0',
+            'reference' => '2f5c94fe7493efc213f643c23b1b1c249d40f47e',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phpmailer/phpmailer',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'phpowermove/docblock' => array(
             'pretty_version' => 'v4.0',
             'version' => '4.0.0.0',
@@ -754,8 +772,8 @@
         'psr/container-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '^1.0',
-                1 => '1.1|2.0',
+                0 => '1.1|2.0',
+                1 => '^1.0',
             ),
         ),
         'psr/event-dispatcher' => array(
