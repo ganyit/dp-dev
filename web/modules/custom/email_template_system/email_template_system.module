@@ -67,8 +67,7 @@ function  email_template_system_comment_presave(CommentInterface $comment) {
  * Check comment with OpenAI moderation API.
  */
 function  email_template_system_check_comment($text) {
-  $api_key = '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';
-
+  $api_key = '';
   try {
     $client = \Drupal::httpClient();
     $response = $client->post('https://api.openai.com/v1/moderations', [
