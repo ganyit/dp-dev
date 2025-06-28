@@ -1,0 +1,7 @@
+name: 'AI Comment Moderation'
+type: module
+description: 'Moderates user comments using OpenAI'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - comment

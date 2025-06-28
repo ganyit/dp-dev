@@ -25,6 +25,7 @@
         "drupal/dynamic_entity_reference": "^3.2",
         "drupal/edux": "^10.2",
         "drupal/exclude_node_title": "^1.4",
+        "drupal/field_permissions": "^1.4",
         "drupal/metatag": "^2.1",
         "drupal/multiple_registration": "^3.3",
         "drupal/phone_number": "^2.0@alpha",

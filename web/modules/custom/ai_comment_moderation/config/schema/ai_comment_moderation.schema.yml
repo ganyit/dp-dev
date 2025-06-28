@@ -1,0 +1,7 @@
+ai_comment_moderation.settings:
+  type: config_object
+  label: 'AI Comment Moderation Settings'
+  mapping:
+    openai_api_key:
+      type: string
+      label: 'OpenAI API Key'

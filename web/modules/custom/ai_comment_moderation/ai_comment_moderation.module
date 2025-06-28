@@ -1,0 +1,23 @@
+<?php
+
+use Drupal\comment\CommentInterface;
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_entity_presave().
+ */
+function  ai_comment_moderation_comment_presave(CommentInterface $comment) {
+
+  $moderation_service = \Drupal::service('ai_comment_moderation.service');
+  $body = $comment->get('comment_body')->value;
+  // Call OpenAI moderation API.
+  $is_flagged =  $moderation_service->moderateText($body);
+
+  if ($is_flagged) {
+    // Prevent saving by unpublishing.    
+    $comment->set('field_moderation_state', 'under_review'); // State machine name
+    $comment->setUnpublished();
+    \Drupal::messenger()->addWarning(t('This comment was flagged by the AI moderator and set to unpublished.'));
+  }
+}
+
