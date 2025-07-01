@@ -17,6 +17,7 @@
     "require": {
         "php": "*",
         "composer/installers": "^2.0",
+        "drupal/ai_comment_moderation": "1.0.x-dev@dev",
         "drupal/bootstrap5": "^4.0",
         "drupal/classy": "^1.0",
         "drupal/core-composer-scaffold": "^10.3",

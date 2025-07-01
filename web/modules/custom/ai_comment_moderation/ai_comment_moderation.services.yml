@@ -1,4 +1,0 @@
-services:
-  ai_comment_moderation.service:
-    class: Drupal\ai_comment_moderation\Service\AiModerationService
-    arguments: ['@http_client', '@logger.channel.default', '@config.factory']

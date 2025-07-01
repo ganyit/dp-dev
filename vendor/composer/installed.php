@@ -3,7 +3,7 @@
         'name' => 'drupal/recommended-project',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'f4cabd6446ee5fd7037aa8e15bd99bc34e7bacaa',
+        'reference' => 'c9ef0a0bc2cd6fb909f7281b18f6c7cde9407bc5',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -161,6 +161,17 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../doctrine/lexer',
             'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'drupal/ai_comment_moderation' => array(
+            'pretty_version' => 'dev-1.0.x',
+            'version' => 'dev-1.0.x',
+            'reference' => '02fad3de3d3fbb3b224825210e18cc3da2a7617c',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/ai_comment_moderation',
+            'aliases' => array(
+                0 => '1.0.x-dev',
+            ),
             'dev_requirement' => false,
         ),
         'drupal/bootstrap5' => array(
@@ -436,7 +447,7 @@
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'f4cabd6446ee5fd7037aa8e15bd99bc34e7bacaa',
+            'reference' => 'c9ef0a0bc2cd6fb909f7281b18f6c7cde9407bc5',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

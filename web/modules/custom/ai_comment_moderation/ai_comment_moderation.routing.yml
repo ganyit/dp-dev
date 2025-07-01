@@ -1,7 +1,0 @@
-ai_comment_moderation.settings:
-  path: '/admin/config/content/ai-comment-moderation'
-  defaults:
-    _form: '\Drupal\ai_comment_moderation\Form\AiModerationSettingsForm'
-    _title: 'AI Comment Moderation Settings'
-  requirements:
-    _permission: 'administer site configuration'

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "30936887981336b6f584b61bf0a6ee83",
+    "content-hash": "84da91c460ac427893ea23a2d455f88d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1140,6 +1140,49 @@
                 }
             ],
             "time": "2024-02-05T11:35:39+00:00"
+        },
+        {
+            "name": "drupal/ai_comment_moderation",
+            "version": "dev-1.0.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ai_comment_moderation.git",
+                "reference": "02fad3de3d3fbb3b224825210e18cc3da2a7617c"
+            },
+            "require": {
+                "drupal/core": "^10",
+                "php": ">=7.4"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.0.x": "1.0.x-dev"
+                },
+                "drupal": {
+                    "version": "1.0.x-dev",
+                    "datestamp": "1751118906",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ganyit",
+                    "homepage": "https://www.drupal.org/u/ganyit"
+                }
+            ],
+            "description": "Automatically moderates Drupal comments using OpenAI's Moderation API.",
+            "homepage": "https://www.drupal.org/project/ai_comment_moderation",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ai_comment_moderation",
+                "issues": "https://www.drupal.org/project/issues/ai_comment_moderation"
+            }
         },
         {
             "name": "drupal/bootstrap5",
@@ -7697,6 +7740,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "drupal/ai_comment_moderation": 20,
         "drupal/phone_number": 15
     },
     "prefer-stable": true,
