@@ -1,0 +1,7 @@
+figma_importer.settings:
+  path: '/admin/config/content/figma-importer'
+  defaults:
+    _form: '\Drupal\figma_importer\Form\FigmaImportForm'
+    _title: 'Figma Importer Settings'
+  requirements:
+    _permission: 'administer site configuration' 

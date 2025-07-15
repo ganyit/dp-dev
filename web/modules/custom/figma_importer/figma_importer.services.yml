@@ -1,0 +1,4 @@
+services:
+  figma_importer.figma_api:
+    class: 'Drupal\figma_importer\Service\FigmaApiService'
+    arguments: ['@http_client', '@logger.factory'] 

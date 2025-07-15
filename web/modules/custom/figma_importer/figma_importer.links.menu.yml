@@ -1,0 +1,6 @@
+figma_importer.settings:
+  title: 'Figma Importer'
+  description: 'Configure Figma API settings and import options.'
+  parent: system.admin_config_content
+  route_name: figma_importer.settings
+  weight: 100 

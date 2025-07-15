@@ -1,0 +1,6 @@
+name: Figma Importer
+machine_name: figma_importer
+type: module
+description: 'Import Figma designs via API and convert them to CMS pages.'
+core_version_requirement: ^8 || ^9 || ^10
+package: Custom 
