@@ -4,7 +4,7 @@ namespace Drupal\phone_number\Element;
 
 use Drupal\Component\Utility\NestedArray;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Render\Element\FormElement;
+use Drupal\Core\Render\Element\FormElementBase;
 use Drupal\phone_number\Exception\CountryException;
 use Drupal\phone_number\Exception\ParseException;
 use Drupal\phone_number\Exception\TypeException;
@@ -33,7 +33,7 @@ use libphonenumber\PhoneNumberType;
  *
  * @FormElement("phone_number")
  */
-class PhoneNumber extends FormElement {
+class PhoneNumber extends FormElementBase {
 
   /**
    * {@inheritdoc}
@@ -168,7 +168,7 @@ class PhoneNumber extends FormElement {
     ];
 
     $element['phone'] = [
-      '#type' => 'textfield',
+      '#type' => 'tel',
       '#default_value' => $phone_number ? $util->libUtil()
         ->format($phone_number, 2) : NULL,
       '#title' => $this->t('Phone number'),

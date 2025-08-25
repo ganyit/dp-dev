@@ -1,0 +1,11 @@
+upload_form:
+  version: 1.x
+  css:
+    theme:
+      css/wireframe-converter.css: {}
+  js:
+    js/wireframe-converter.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupal.ajax 

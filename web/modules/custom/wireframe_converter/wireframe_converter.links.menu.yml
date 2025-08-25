@@ -1,0 +1,17 @@
+wireframe_converter.admin:
+  title: 'Wireframe Converter'
+  description: 'Configure Azure Computer Vision API settings for wireframe conversion.'
+  route_name: wireframe_converter.admin
+  parent: system.admin_config_development
+
+wireframe_converter.convert:
+  title: 'Convert Wireframe'
+  description: 'Convert wireframes to Drupal pages using Azure Computer Vision.'
+  route_name: wireframe_converter.convert
+  parent: system.admin_content
+
+wireframe_converter.upload:
+  title: 'Upload Wireframe'
+  description: 'Upload a wireframe image for conversion.'
+  route_name: wireframe_converter.upload
+  parent: system.admin_content 

@@ -69,7 +69,24 @@ class PhoneNumber extends WebformCompositeBase {
    * {@inheritdoc}
    */
   public function getCompositeElements() {
-    return [];
+    $elements = [];
+    $elements['value'] = [
+      '#title' => $this->t('Value'),
+      '#type' => 'textfield',
+    ];
+    $elements['country'] = [
+      '#title' => $this->t('Country'),
+      '#type' => 'textfield',
+    ];
+    $elements['local_number'] = [
+      '#title' => $this->t('Local number'),
+      '#type' => 'textfield',
+    ];
+    $elements['extension'] = [
+      '#title' => $this->t('Extension'),
+      '#type' => 'textfield',
+    ];
+    return $elements;
   }
 
   /**

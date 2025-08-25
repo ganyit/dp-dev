@@ -1,0 +1,31 @@
+wireframe_converter.admin:
+  path: '/admin/config/wireframe-converter'
+  defaults:
+    _form: '\Drupal\wireframe_converter\Form\WireframeConverterSettingsForm'
+    _title: 'Wireframe Converter Settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+wireframe_converter.convert:
+  path: '/admin/content/wireframe-converter'
+  defaults:
+    _controller: '\Drupal\wireframe_converter\Controller\WireframeConverterController::convertPage'
+    _title: 'Convert Wireframe'
+  requirements:
+    _permission: 'create content'
+
+wireframe_converter.upload:
+  path: '/admin/content/wireframe-converter/upload'
+  defaults:
+    _form: '\Drupal\wireframe_converter\Form\WireframeUploadForm'
+    _title: 'Upload Wireframe'
+  requirements:
+    _permission: 'create content'
+
+wireframe_converter.process:
+  path: '/wireframe-converter/process'
+  defaults:
+    _controller: '\Drupal\wireframe_converter\Controller\WireframeConverterController::processConversion'
+    _title: 'Process Wireframe'
+  requirements:
+    _permission: 'create content' 

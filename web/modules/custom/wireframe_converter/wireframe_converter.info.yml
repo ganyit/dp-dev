@@ -1,0 +1,11 @@
+name: Wireframe Converter
+machine_name: wireframe_converter
+type: module
+description: 'Convert wireframes to Drupal CMS pages using Azure Computer Vision API.'
+core_version_requirement: ^8 || ^9 || ^10
+package: Custom
+dependencies:
+  - drupal:node
+  - drupal:field
+  - drupal:file
+  - drupal:image 

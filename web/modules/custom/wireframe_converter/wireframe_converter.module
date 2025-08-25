@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Wireframe Converter module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function wireframe_converter_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.wireframe_converter':
+      return '<p>' . t('Convert wireframes to Drupal CMS pages using Azure Computer Vision API.') . '</p>';
+  }
+} 

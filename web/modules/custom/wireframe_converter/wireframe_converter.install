@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the Wireframe Converter module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function wireframe_converter_install() {
+  // Create the wireframes directory for uploaded files.
+  $wireframes_dir = 'public://wireframes';
+  if (!file_exists($wireframes_dir)) {
+    \Drupal::service('file_system')->mkdir($wireframes_dir, 0755, TRUE);
+  }
+
+  // Set default configuration.
+  \Drupal::configFactory()->getEditable('wireframe_converter.settings')
+    ->set('default_content_type', 'page')
+    ->set('auto_publish', TRUE)
+    ->set('create_blocks', TRUE)
+    ->set('create_menus', FALSE)
+    ->save();
+
+  \Drupal::messenger()->addStatus(t('Wireframe Converter module has been installed successfully. Please configure your Azure Computer Vision API credentials in the settings page.'));
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function wireframe_converter_uninstall() {
+  // Clean up uploaded wireframe files.
+  $wireframes_dir = 'public://wireframes';
+  if (file_exists($wireframes_dir)) {
+    \Drupal::service('file_system')->deleteRecursive($wireframes_dir);
+  }
+
+  // Remove configuration.
+  \Drupal::configFactory()->getEditable('wireframe_converter.settings')->delete();
+} 

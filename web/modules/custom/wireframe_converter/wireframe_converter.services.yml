@@ -1,0 +1,8 @@
+services:
+  wireframe_converter.azure_vision:
+    class: Drupal\wireframe_converter\Service\AzureComputerVisionService
+    arguments: ['@config.factory', '@http_client', '@logger.factory']
+  
+  wireframe_converter.converter:
+    class: Drupal\wireframe_converter\Service\WireframeConverterService
+    arguments: ['@wireframe_converter.azure_vision', '@entity_type.manager', '@logger.factory'] 
