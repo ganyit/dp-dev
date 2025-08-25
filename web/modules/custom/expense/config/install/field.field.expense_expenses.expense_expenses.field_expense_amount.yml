@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.expense_expenses.field_expense_amount
+id: expense_expenses.expense_expenses.field_expense_amount
+field_name: field_expense_amount
+entity_type: expense_expenses
+bundle: expense_expenses
+label: 'Expense amount'
+description: 'Amount spent.'
+required: true
+translatable: false
+default_value: { }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

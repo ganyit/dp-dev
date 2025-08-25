@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.expense_expenses.field_expense_type
+    - taxonomy.vocabulary.expense_type
+  module:
+    - taxonomy
+id: expense_expenses.expense_expenses.field_expense_type
+field_name: field_expense_type
+entity_type: expense_expenses
+bundle: expense_expenses
+label: 'Expense type'
+description: 'Select the type of expense.'
+required: false
+translatable: true
+default_value: { }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      expense_type: expense_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+field_type: entity_reference

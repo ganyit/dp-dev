@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.expense_expenses.field_expense_date
+  module:
+    - datetime
+id: expense_expenses.expense_expenses.field_expense_date
+field_name: field_expense_date
+entity_type: expense_expenses
+bundle: expense_expenses
+label: 'Expense date'
+description: 'Date of the expense.'
+required: true
+translatable: false
+default_value: { }
+default_value_callback: ''
+settings: { }
+field_type: datetime

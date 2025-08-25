@@ -1,0 +1,50 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.expense_expenses.expense_expenses.field_expense_type
+    - field.storage.expense_expenses.field_expense_type
+  module:
+    - options
+    - taxonomy
+id: expense_expenses.expense_expenses.default
+targetEntityType: expense_expenses
+bundle: expense_expenses
+mode: default
+content:
+  field_expense_name:
+    type: string_textfield
+    weight: -10
+    settings:
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: { }
+  field_expense_date:
+    type: datetime_default
+    weight: -9
+    settings: { }
+    region: content
+    third_party_settings: { }
+  field_expense_amount:
+    type: number
+    weight: -8
+    settings:
+      placeholder: ''
+    region: content
+    third_party_settings: { }
+  field_expense_description:
+    type: text_textarea
+    weight: -7
+    settings:
+      rows: 5
+      placeholder: ''
+    region: content
+    third_party_settings: { }
+  field_expense_type:
+    type: options_select
+    weight: -6
+    settings: { }
+    region: content
+    third_party_settings: { }
+hidden: { }

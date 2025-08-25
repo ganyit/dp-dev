@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: { }
+name: 'Expense types'
+vid: expense_type
+description: 'Types of expenses. Manage options under Structure > Taxonomy.'
+weight: 0

@@ -1,0 +1,56 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.expense_expenses.expense_expenses.field_expense_type
+    - field.storage.expense_expenses.field_expense_type
+  module:
+    - taxonomy
+id: expense_expenses.expense_expenses.default
+targetEntityType: expense_expenses
+bundle: expense_expenses
+mode: default
+content:
+  field_expense_name:
+    label: above
+    type: string
+    weight: -10
+    settings: { }
+    region: content
+    third_party_settings: { }
+  field_expense_date:
+    label: above
+    type: datetime_default
+    weight: -9
+    settings:
+      format_type: medium
+      timezone_override: ''
+    region: content
+    third_party_settings: { }
+  field_expense_amount:
+    label: above
+    type: number_decimal
+    weight: -8
+    settings:
+      thousand_separator: ''
+      decimal_separator: '.'
+      scale: 2
+      prefix_suffix: true
+    region: content
+    third_party_settings: { }
+  field_expense_description:
+    label: above
+    type: text_default
+    weight: -7
+    settings: { }
+    region: content
+    third_party_settings: { }
+  field_expense_type:
+    label: above
+    type: entity_reference_label
+    weight: -6
+    settings:
+      link: true
+    region: content
+    third_party_settings: { }
+hidden: { }

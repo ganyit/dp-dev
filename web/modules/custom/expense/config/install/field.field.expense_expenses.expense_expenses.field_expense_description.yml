@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.expense_expenses.field_expense_description
+  module:
+    - text
+id: expense_expenses.expense_expenses.field_expense_description
+field_name: field_expense_description
+entity_type: expense_expenses
+bundle: expense_expenses
+label: 'Expense description'
+description: 'Details about the expense.'
+required: false
+translatable: true
+default_value: { }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_long
